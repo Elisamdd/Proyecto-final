@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tips de Cocina</title>
+  <style>
+    :root {
+      --bg-color: #fdfaf6;
+      --primary-color: #ff7e5f;
+      --secondary-color: #feb47b;
+      --card-bg: #fff;
+      --text-color: #333;
+      --accent: #ffb88c;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--bg-color);
+      color: var(--text-color);
+    }
+
+    header {
+      background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 2rem;
+      gap: 2rem;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      padding: 1.5rem;
+      width: 280px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      width: 6px;
+      height: 100%;
+      background: var(--primary-color);
+      top: 0;
+      left: 0;
+      border-top-left-radius: 12px;
+      border-bottom-left-radius: 12px;
+    }
+
+    .card h2 {
+      margin-top: 0;
+      color: var(--primary-color);
+    }
+
+    .card p {
+      line-height: 1.5;
+    }
+
+    .button-container {
+      text-align: center;
+      margin: 2rem 0;
+    }
+
+    .back-button {
+      background: var(--primary-color);
+      color: white;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .back-button:hover {
+      background: var(--secondary-color);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>10 Tips Geniales de Cocina</h1>
+    <p>Consejos creativos para mejorar tus habilidades culinarias 🍳</p>
+  </header>
+
+  <section class="container">
+    <div class="card">
+      <h2>1. Afila tus cuchillos</h2>
+      <p>Un cuchillo afilado no solo corta mejor, también es más seguro que uno desafilado.</p>
+    </div>
+    <div class="card">
+      <h2>2. Lee toda la receta</h2>
+      <p>Antes de comenzar, asegúrate de entender y tener todos los ingredientes listos.</p>
+    </div>
+    <div class="card">
+      <h2>3. Usa ingredientes frescos</h2>
+      <p>El sabor de tus platillos mejora notablemente cuando usas ingredientes frescos.</p>
+    </div>
+    <div class="card">
+      <h2>4. Prueba mientras cocinas</h2>
+      <p>No esperes hasta el final: prueba y ajusta la sazón durante la preparación.</p>
+    </div>
+    <div class="card">
+      <h2>5. Organiza tu espacio</h2>
+      <p>Mantén tu área limpia y ordenada. ¡La cocina será más agradable y segura!</p>
+    </div>
+    <div class="card">
+      <h2>6. Deja reposar la carne</h2>
+      <p>Después de cocinar, deja que repose unos minutos para que los jugos se redistribuyan.</p>
+    </div>
+    <div class="card">
+      <h2>7. Usa hierbas frescas</h2>
+      <p>Agrega hierbas al final de la cocción para mantener su sabor y aroma.</p>
+    </div>
+    <div class="card">
+      <h2>8. Cocina con calma</h2>
+      <p>La cocina apresurada lleva a errores. Tómate tu tiempo y disfruta el proceso.</p>
+    </div>
+    <div class="card">
+      <h2>9. Mide con precisión (cuando importa)</h2>
+      <p>En la repostería, la precisión es clave. Usa tazas y cucharas medidoras.</p>
+    </div>
+    <div class="card">
+      <h2>10. Limpia mientras cocinas</h2>
+      <p>Ahórrate el desastre al final limpiando mientras avanzas con tu receta.</p>
+    </div>
+  </section>
+
+  <!-- Botón de regreso -->
+  <div class="button-container">
+    <a href="index.html" class="back-button">⬅️ Volver a la página principal</a>
+  </div>
+
+  <footer>
+    © 2025 Tips de Cocina | Diseñado con cariño 🍽️
+  </footer>
+
+</body>
+</html>

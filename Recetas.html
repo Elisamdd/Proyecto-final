@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sabores del Mundo - Recetas Variadas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+      background-color: #fffaf6;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #f6d365, #fda085);
+      color: white;
+      padding: 2rem 0;
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+    }
+
+    header h1 {
+      font-size: 3rem;
+    }
+
+    nav {
+      background-color: #fff3e0;
+      padding: 1rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav li {
+      margin: 0 1rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #d35400;
+      font-weight: bold;
+      font-size: 1.1rem;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #e67e22;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    .category {
+      margin-bottom: 4rem;
+    }
+
+    .category h2 {
+      margin-bottom: 1.5rem;
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      color: #d35400;
+      border-bottom: 2px solid #f39c12;
+      display: inline-block;
+      padding-bottom: 0.3rem;
+    }
+
+    .recipes {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      padding: 1rem 1rem 0;
+      font-size: 1.4rem;
+      color: #e67e22;
+    }
+
+    .card ul {
+      padding: 0 1rem;
+      list-style-type: disc;
+      margin: 0.5rem 0;
+    }
+
+    .card p {
+      padding: 0 1rem 1rem;
+      color: #555;
+      font-size: 0.95rem;
+    }
+
+    .back-button {
+      display: block;
+      margin: 2rem auto 0;
+      padding: 0.8rem 1.5rem;
+      background-color: #e67e22;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 5px;
+      width: fit-content;
+      transition: background-color 0.3s;
+    }
+
+    .back-button:hover {
+      background-color: #d35400;
+    }
+
+    footer {
+      background-color: #f2f2f2;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>Sabores del Mundo</h1>
+      <p>Descubre recetas deliciosas para todos los gustos</p>
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#postres">Postres</a></li>
+      <li><a href="#ensaladas">Ensaladas</a></li>
+      <li><a href="#pastas">Pastas</a></li>
+      <li><a href="#comidas">Comidas</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+
+    <!-- Postres -->
+    <section id="postres" class="category">
+      <h2>Postres</h2>
+      <div class="recipes">
+        <div class="card">
+          <img src="pchoco.jpg" alt="Pastel de Chocolate">
+          <h3>Pastel de Chocolate</h3>
+          <ul>
+            <li>200g de harina</li>
+            <li>100g de cacao en polvo</li>
+            <li>3 huevos</li>
+            <li>200ml de leche</li>
+          </ul>
+          <p>Un pastel suave con intenso sabor a chocolate. Se mezcla todo, se hornea 35 min y se decora con fresas.</p>
+        </div>
+        <div class="card">
+          <img src="Helado.jpg" alt="Helado Artesanal">
+          <h3>Helado Artesanal</h3>
+          <ul>
+            <li>500ml de crema</li>
+            <li>100g de azúcar</li>
+            <li>1 vaina de vainilla</li>
+            <li>Galletas trituradas</li>
+          </ul>
+          <p>Helado cremoso sin máquina. Se congela la mezcla y se revuelve cada 30 minutos hasta endurecer.</p>
+        </div>
+      </div>
+      <a href="index.html" class="back-button">Volver a Inicio</a>
+    </section>
+
+    <!-- Ensaladas -->
+    <section id="ensaladas" class="category">
+      <h2>Ensaladas</h2>
+      <div class="recipes">
+        <div class="card">
+          <img src="ensalada-verde.jpg" alt="Ensalada Verde">
+          <h3>Ensalada Verde</h3>
+          <ul>
+            <li>Lechuga fresca</li>
+            <li>1 palta en cubos</li>
+            <li>Tomates cherry</li>
+            <li>Vinagre balsámico</li>
+          </ul>
+          <p>Ideal como entrada. Se mezclan los ingredientes y se sirve fría con un toque de aceite de oliva.</p>
+        </div>
+        <div class="card">
+          <img src="griega.jpg" alt="Ensalada Griega">
+          <h3>Ensalada Griega</h3>
+          <ul>
+            <li>Queso feta</li>
+            <li>Pepino en rodajas</li>
+            <li>Aceitunas negras</li>
+            <li>Orégano seco</li>
+          </ul>
+          <p>Fresca y saludable. Combina sabores mediterráneos y se adereza con limón y aceite de oliva.</p>
+        </div>
+      </div>
+      <a href="index.html" class="back-button">Volver a Inicio</a>
+    </section>
+
+    <!-- Pastas -->
+    <section id="pastas" class="category">
+      <h2>Pastas</h2>
+      <div class="recipes">
+        <div class="card">
+          <img src="pesto.jpg" alt="Pasta al Pesto">
+          <h3>Pasta al Pesto</h3>
+          <ul>
+            <li>200g de pasta</li>
+            <li>50g de albahaca</li>
+            <li>2 dientes de ajo</li>
+            <li>50g de piñones</li>
+          </ul>
+          <p>Una receta italiana clásica. La salsa pesto se licúa y se mezcla con la pasta cocida.</p>
+        </div>
+        <div class="card">
+          <img src="clasica.jpg" alt="Espagueti Clásico">
+          <h3>Espagueti Clásico</h3>
+          <ul>
+            <li>250g de espagueti</li>
+            <li>2 tomates maduros</li>
+            <li>1 cebolla</li>
+            <li>Queso parmesano</li>
+          </ul>
+          <p>Se prepara una salsa de tomate casera y se mezcla con espagueti al dente. Se sirve con queso.</p>
+        </div>
+      </div>
+      <a href="index.html" class="back-button">Volver a Inicio</a>
+    </section>
+
+    <!-- Comidas -->
+    <section id="comidas" class="category">
+      <h2>Comidas</h2>
+      <div class="recipes">
+        <div class="card">
+          <img src="polloagri.jpg" alt="Pollo Agridulce">
+          <h3>Pollo Agridulce</h3>
+          <ul>
+            <li>500g de pollo</li>
+            <li>1 pimiento rojo</li>
+            <li>2 cdas de salsa agridulce</li>
+            <li>1 cebolla</li>
+          </ul>
+          <p>Una receta asiática con trozos de pollo salteado, verduras y salsa agridulce espesa.</p>
+        </div>
+        <div class="card">
+          <img src="tacos.jpg" alt="Tacos Mexicanos">
+          <h3>Tacos Mexicanos</h3>
+          <ul>
+            <li>6 tortillas</li>
+            <li>Carne asada</li>
+            <li>Cilantro y cebolla</li>
+            <li>Rodajas de lima</li>
+          </ul>
+          <p>Auténticos tacos callejeros. Se calientan las tortillas, se rellenan y se decoran con cebolla y cilantro.</p>
+        </div>
+      </div>
+      <a href="index.html" class="back-button">Volver a Inicio</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Sabores del Mundo - Todos los derechos reservados</p>
+  </footer>
+
+</body>
+</html>
